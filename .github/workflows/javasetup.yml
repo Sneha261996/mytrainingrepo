@@ -2,7 +2,7 @@ name: Java Project
 
 on:
  push:
- workflow-dispatch:
+ workflow_dispatch:
 
 jobs: 
  echo-java-job: 
