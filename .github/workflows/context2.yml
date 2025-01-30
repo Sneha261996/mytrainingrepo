@@ -17,5 +17,4 @@ jobs:
       elif [["${{github.ref}}" == "refs/heads/dev" ]]; then
        echo "DEPLOY_ENV=staging"
       fi
-      echo "Env is $DEPLOY_ENV"
       
