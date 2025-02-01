@@ -1,4 +1,4 @@
-name: input
+name: needs
 
 run-name: Input Debug - ${{inputs.debug}}
 on:
