@@ -1,0 +1,13 @@
+name: input
+
+run-name: Input Debug - ${{inputs.debug}}
+on:
+ workflow_dispatch:
+  inputs:
+   debug:
+    type: boolean
+    default: false
+jobs:
+  echo-input-data:
+   runs-on: ubuntu-latest
+    
