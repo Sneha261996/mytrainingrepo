@@ -17,7 +17,7 @@ jobs:
      uses: actions/setup-node@v4.2.0
      with:
        node-version: ${{matrix.node-version}}
-   - run: echo "os is ${{matrix.os}} and node version is ${{matrix.os}}"
+   - run: echo "os is ${{matrix.os}} and node version is ${{matrix.node-version}}"
        
     
   
