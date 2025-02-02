@@ -29,7 +29,7 @@ jobs:
       echo "event path is ${{github.event_path}}"
       echo "graphql url is ${{github.graphql_url}}"
       echo "github headref is ${{github.head_ref}}"
-      echo "github job is ${{github.job
+      echo "github job is ${{github.job}}"
       echo "path is ${{github.path}}"
       echo "ref name is ${{github.ref_name}}"
       echo "ref protected is ${{github.ref_protected}}"
