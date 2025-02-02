@@ -1,0 +1,54 @@
+name: github context
+
+on:
+ push:
+ workflow_dispatch:
+
+jobs:
+ echo-context:
+  runs-on: ubuntu-latest
+  steps:
+   - run : |
+      echo "Event name is ${{github.event_type}}"
+      echo "Ref is ${{github.ref}}"
+      echo "SHA is ${{github.sha}}"
+      echo "Actor is ${{github.actor}}"
+      echo "Workflow is ${{github.workflow}}"
+      echo "Run Id is ${{github.run_id}}"
+      echo "Run number is ${{github.run_number}}"
+      echo "Action is ${{github_actions}}"
+      echo "action path is ${{github.action_path}}"
+      echo "action ref is ${{github.action_ref}}"
+      echo "action repo is ${{github.action_repository}}"
+      echo "action status is ${{github.action_status}}"
+      echo "actor id is ${{github.actor_id}}"
+      echo "api url is ${{github.api_url}}"
+      echo "base_ref is ${{github.base_ref}}"
+      echo "env is ${{github.env}}"
+      echo "event is ${{github.event}}"
+      echo "event name is ${{github.event_name}}"
+      echo "event path is ${{github.event_path}}"
+      echo "graphql url is ${{github.graphql_url}}"
+      echo "github headref is ${{github.head_ref}}"
+      echo "github job is ${{github.job
+      echo "path is ${{github.path}}"
+      echo "ref name is ${{github.ref_name}}"
+      echo "ref protected is ${{github.ref_protected}}"
+      echo "ref type is ${{github.ref_type}}"
+      echo "repo is ${{github.repository}}"
+      echo "repository_id is ${{github.repository_id}}"
+      echo "repo owner is ${{github.repository_owner}}"
+      echo "repo owner id is ${{github.repository_owner_id}}"
+      echo "repo url is ${{github.repositoryUrl}}"
+      echo "retention days is ${{github.retention_days}}"
+      echo "run id is ${{github.run_id}}"
+      echo "run number is ${{github.run_number}}"
+      echo "run attempt is ${{github.run_attempt}}"
+      echo "secret source is ${{github.secret_source}}"
+      echo "server url is ${{github.server_url}}"
+      echo "token is ${{github.token}}"
+      echo "triggering actor is ${{github.triggering_actor}}"
+      echo "workflow ref is ${{github.workflow_ref}}"
+      echo "workflow sha is ${{github.workflow_sha}}"
+      echo "workspace is ${{github.workspace}}"
+       
