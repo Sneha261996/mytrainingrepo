@@ -13,5 +13,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - run: echo "display env ${{env.VAR}}"
+   - run: echo "variable is ${{vars.MY_VAR}}"
      env:
       VAR: 'step'
