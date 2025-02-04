@@ -1,0 +1,24 @@
+name: starts with ends with
+
+on:
+ push:
+  branches: 
+   - 'feature/feature-*'
+   - main
+
+jobs:
+ echo-starts-with:
+   runs-on: ubuntu-latest
+   steps: 
+    - name: Chech status
+      run: echo "runs on ${{github.ref_name}}"
+
+    - name: Startswith
+      if: startsWith(github.ref_name,'feature/feature-*')
+      run: echo "This branch starts with feature "
+
+    - name: EndsWith
+      if: endsWith(github.ref_name,'-f123')
+      run: echo "This branch ends with -f123"
+
+      
