@@ -1,6 +1,7 @@
 name: Contains
 
 on:
+ push:
  issues:
  workflow_dispatch:
 jobs:
