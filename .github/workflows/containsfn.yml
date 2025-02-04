@@ -10,4 +10,4 @@ jobs:
    - run: echo "display event ${{github.event}}"
    - name: display contains fn
      if: ${{ contains(github.event.issue.labels.*.name, 'bug') }}
-     run: echo "displaying bug"
+     run: echo "display label name ${{github.event.issue.labels.*.name}}"
