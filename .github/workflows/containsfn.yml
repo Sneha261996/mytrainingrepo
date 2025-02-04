@@ -7,7 +7,6 @@ jobs:
  echo-contains:
   runs-on: ubuntu-latest
   steps:
-   - run: echo "display event ${{github.event}}"
    - name: display contains fn
      if: ${{ contains(github.event.issue.labels.*.name, 'bug') }}
      run: echo "display label name ${{github.event.issue.labels.*.name}}"
