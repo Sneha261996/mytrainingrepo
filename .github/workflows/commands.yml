@@ -38,8 +38,11 @@ jobs:
       - name: Stop and start workflow commands
         run: |
           echo "::stop-commands::pause"
-          echo "This will not appear in logs due to the stop command"
+          echo "::group::This message will be hidden in logs"
+          echo "Sensitive data processing..."
+          echo "::endgroup::"
           echo "::pause::"
+          echo "This message will be visible again!"
 
       # Send values to pre and post actions
       - name: Pre and post action setup
